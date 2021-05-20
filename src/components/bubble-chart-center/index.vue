@@ -27,12 +27,12 @@ export default {
                         number: 5
                     },
                     {
-                        condition: ["只说", "只做"],
-                        number: 55
+                        condition: ["只说", "不做"],
+                        number: 7
                     },
                     {
                         condition: ["不说", "不做"],
-                        number: 55
+                        number: 0
                     }
                 ];
             }
