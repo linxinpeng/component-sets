@@ -120,6 +120,23 @@
             </div>
           </el-card>
           <div class="start-line end-line">Start（before 05.20）</div>
+           <el-card id="nav5" style="margin-top: 12px">
+            <div slot="header" class="clearfix">
+              <span>日历</span>
+              <el-popover placement="right" width="300" trigger="hover">
+                <div class="box">
+                  <div class="item">
+                    <label>插件：</label>
+                    <span>calendar</span>
+                  </div>
+                </div>
+                <i slot="reference" class="el-icon-question"></i>
+              </el-popover>
+            </div>
+            <div class="ppt">
+              <calendar />
+            </div>
+          </el-card>
         </el-main>
       </el-container>
     </el-container>
@@ -133,6 +150,7 @@ import bubbleChart from "@/components/bubble-chart";
 import bubbleChartCenter from "@/components/bubble-chart-center";
 import wordClouds from "@/components/word-clouds";
 import SideNav from "@/components/side-nav";
+import calendar from "@/components/calendar"
 export default {
   name: "app",
   components: {
@@ -142,6 +160,7 @@ export default {
     bubbleChartCenter,
     wordClouds,
     SideNav,
+    calendar
   },
   data() {
     let wordCloudsData = [];
